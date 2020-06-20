@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>FERRARI</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li class="logo">FERRARI</li>
+                <li></li>
+                <li ><a href="javascript:void(0);" style="font-size:35px;font-family: heavy; text-decoration: none;color: white;" class="icon navburg">&#9776;</a></li>
+            <ul>
+
+            <ul>
+                
+                <li class="nav">CONTACT US</li>
+                <li class="nav">HISTORY</li>
+                <li class="nav">STORE</li>
+                <li class="nav nav1">MAGAZINE</li>
+                <li class="nav">FERRARI WORLD</li>
+               
+
+
+
+            </ul>
+        </nav>
+        <nav class="menu">
+            <ul class="active">
+                <li ><a href="#">FERRARI WORLD</a></li>
+                <li><a href="#">MAGAZINE</a></li>
+                <li><a href="#">STORE</a></li>
+                <li><a href="#">HISTORY</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </div>
+   
+        <ul class="class">
+            <li class="under bar1">AUTO</li>
+            <li class="under2">RACING</li>
+            <li class="under bar2">URBAN</li>
+            <li class="under bar3">OFF-ROAD</li>
+        </ul>
+    
+<script>
+    jQuery(document).ready(function() {
+	jQuery('.navburg').click(function(e) {
+        jQuery(this).toggleClass('active');
+        jQuery('.class').hide();
+        jQuery('.menu ul').toggleClass('active');
+        e.preventDefault();
+	});
+});
+</script>
+
+</body>
+
+</html>
